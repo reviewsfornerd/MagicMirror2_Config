@@ -1,0 +1,98 @@
+.newsfeed .bright {
+ color: #00FF00;
+}
+
+.newsfeed .dimmed {
+ color: #003b6f;
+}
+
+.weather .min-temp {  
+ color: #ADD8E6;
+}
+.weather .tr.colored .max-temp {
+ color:orange; /*#E23D28;*/
+}
+
+.weatherforecast .min-temp {
+ color: blue; /*#ADD8E6;*/
+}
+
+.weatherforecast .max-temp {
+ color: orange; /*#E23D28;*/
+ 
+}
+.weatherforecast .rain {
+ color:grey; /*#542eeb;*/
+}
+.weather .day { 
+
+ /*color: #00FF00;*/
+color: white;
+
+}
+.clock .date {
+
+ /*color: #00FF00;*/
+color: white;
+
+}
+
+/*.clock .time {
+  color: orange;  #82bae5;  nice, light blue colour */
+{
+}
+.MMM-FlipClock .date {
+ color: yellow;
+ /*color: #00FF00;*/ 
+}
+.MMM-FlipClock .tick-text-inline {
+ /*color: #00FF00;*/
+color: white;
+}
+.calendar .title {
+ /*color: #00FF00;*/
+color: white;
+ width: 400px;
+}
+.calendar .time {
+/*color: #00FF00;*/
+color: white;
+}
+.calendar .location {
+ /*color: #00FF00;*/
+color: white;
+}
+.MMM-WiFiPassword {
+ /*color: #00FF00;*/
+color: white;
+}
+.MMM-YouTubeChannelStats {
+ /*color: #00FF00;*/
+color: white;
+
+}
+.MMM-YT-SubCount {
+
+ /*color: #00FF00;*/
+color: white;
+
+}
+.MMM-Bring .listName  {
+
+ /*color: #00FF00;*/
+color: white;
+ 
+}
+
+html {
+	cursor: default;
+}
+
+body {
+  background-image: url('Photos/vintage1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+

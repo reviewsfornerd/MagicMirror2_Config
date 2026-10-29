@@ -1,0 +1,48 @@
+These are the steps I took to download and install the latest Node.js version:
+
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
+
+Clone the repository and check out the master branch:
+git clone https://github.com/MichMich/MagicMirror
+
+Enter the repository: cd MagicMirror/
+
+Install the application: npm run install-mm
+
+Make a copy of the config sample file: cp config/config.js.sample config/config.js
+
+Start the application: npm run start
+
+
+
+I installed the following Modules:
+
+
+
+MMM-Bring git clone https://github.com/werthdavid/MMM-Bring.git /npm install works
+MMM-Burnin git clone https://github.com/werthdavid/MMM-BurnIn.git / npm install works
+MMM-Carousel git clone https://github.com/shbatm/MMM-Carousel /npm install works
+MMM-Remote-Control git clone https://github.com/Jopyth/MMM-Remote-Control.git /npm install works
+MMM-Screencast git clone https://github.com/kevinatown/MMM-Screencast.git / npm install works
+MMM-SpaceLaunchNow git clone https://github.com/koxm/MMM-SpaceLaunchNow.git /npm install works
+MMM-WiFiPassword git clone git@github.com:TeraTech/MMM-WiFiPassword.git OR git clone https://github.com/TeraTech/MMM-WiFiPassword.git / npm install works
+MMM-EmbedYoutube git clone https://github.com/nitpum/MMM-EmbedYoutube.git /npm install works!
+MMM-GoogleCalendar git clone https://github.com/randomBrainstormer/MMM-GoogleCalendar.git /npm install
+MMM-YT-SubCount git clone https://github.com/choffmann/MMM-YT-SubCount.git works
+MMM-YouTubeChannelStats git clone https://github.com/ianperrin/MMM-YouTubeChannelStats.git works
+
+I set up rules that shiut the monitor off at night and reboot the system in the morning
+crontab -e
+#58  6   *   *   *   vcgencmd display_power 1
+#59  6   *   *   *   vcgencmd display_power 0
+59  6   *   *   *   /sbin/shutdown -r now
+0  23   *   *   *   vcgencmd display_power 0
+
+To Fix Display coming back on after reboot:
+
+sudo nano /boot/config.txt
+comment out
+#dtoverlay=vc4-kms-v3d
+
+
